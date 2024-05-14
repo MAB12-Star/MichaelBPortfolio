@@ -1859,11 +1859,18 @@ input, select, textarea {
     }
 }
 
+#Certs {
+    width: 100px;  /* Set the width to 100 pixels */
+    height: 100px; /* Set the height to 100 pixels */
+}
 
-
-
-
-
-
-
-
+.image.main {
+	display: flex; /* Activates Flexbox layout */
+	align-items: center; /* Aligns items vertically in the center */
+	justify-content: space-around; /* Distributes space around items */
+  }
+  
+  .image.main img {
+	margin: 0 10px; /* Adds horizontal spacing between images */
+  }
+  
