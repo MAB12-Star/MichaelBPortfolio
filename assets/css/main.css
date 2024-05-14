@@ -1892,3 +1892,13 @@ input, select, textarea {
 .thumbnail-link:hover iframe {
     transform: scale(1.05); /* Slightly enlarge the video on hover */
 }
+
+.certification {
+	position: relative;
+  }
+  .certification img {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+  }
