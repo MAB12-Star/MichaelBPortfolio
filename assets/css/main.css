@@ -1874,3 +1874,21 @@ input, select, textarea {
 	margin: 0 10px; /* Adds horizontal spacing between images */
   }
   
+  .thumbnail-link {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.thumbnail-link iframe {
+    width: 100%;
+    height: auto;
+    border: solid 1px #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail-link:hover iframe {
+    transform: scale(1.05); /* Slightly enlarge the video on hover */
+}
