@@ -1902,3 +1902,45 @@ input, select, textarea {
 	right: 0;
 	transform: translateY(-50%);
   }
+
+  .column {
+	float: left;
+	width: 33.33%;
+	padding: 0 10px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background: none; /* Ensures no CSS background is applied */
+    border: none; /* Removes any borders that might be visible */
+	width: 100px; /* Adjust width as necessary */
+    height: auto; /* Keeps the aspect ratio intact */
+    margin: 10px; /* Keeps existing spacing */
+	
+}
+
+
+@media (max-width: 600px) {
+    .logo-container img {
+        width: 50px; /* Smaller logos for smaller screens */
+        margin: 5px; /* Less space between logos on small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
