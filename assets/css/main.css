@@ -1936,7 +1936,33 @@ input, select, textarea {
 }
 
 
+/* Mobile Styles */
+@media (max-width: 600px) {
+    #fixed-portfolio h2,
+    #fixed-links h2 {
+        display: block;
+        width: 100%;
+    }
 
+    #fixed-portfolio h2 a,
+    #fixed-links h2 a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+@media (max-width: 600px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container img {
+        max-width: 80px; /* Adjust size for mobile devices */
+        margin: 5px 0;
+    }
+}
 
 
 
