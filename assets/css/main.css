@@ -1799,6 +1799,7 @@ input, select, textarea {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for better visual separation */
 }
 
+
 /* Thumbnail Link and Image */
 .thumbnail-link {
     display: block;
@@ -1990,7 +1991,15 @@ input, select, textarea {
   }
    
  
-
+.project-box-featured {
+    max-width:1000px ; /* Adjust based on your design */
+    margin: 1.5rem auto; /* Center horizontally with additional spacing from other sections */
+    padding: 1.5rem; /* Add padding inside the container */
+    border: solid 2px #ffffff; /* Define the border style and thickness */
+    border-radius: 8px; /* Rounded corners for the outer box */
+    background-color: rgba(27, 31, 34, 0.85); /* Match background with your existing design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for better visual separation */
+}
 
 
 
@@ -2020,4 +2029,114 @@ input, select, textarea {
         margin-bottom: 5px; /* Add some space below the icon */
     }
 }
+
+.project-box-featured .thumbnail-image {
+  background-color: #fff;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Right side (text) */
+.project-box-featured .pv-body {
+  flex: 2 1 400px;           /* wider than image section */
+  color: #ddd;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.project-box-featured .pv-links {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+.project-box-featured .pv-links a {
+  color: #00bfa6;
+  text-decoration: none;
+}
+
+.project-box-featured .pv-links a:hover {
+  text-decoration: underline;
+}
+
+.project-box-featured .pv-desc p {
+  margin-bottom: 12px;
+}
+
+.project-box-featured span {
+  color: #00bfa6;
+  font-weight: 600;
+}
+
+/* Stack vertically on mobile */
+@media (max-width: 768px) {
+  .project-box-featured {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-box-featured .pv-body {
+    text-align: center;
+  }
+
+  .project-box-featured .thumbnail-link {
+    margin-bottom: 1.5rem;
+  }
+}
+/* Wraps image and text side-by-side */
+.project-box-featured > div {
+  display: flex;
+  flex-direction: row;        /* Image on left, text on right */
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Left: image */
+.project-box-featured .thumbnail-link {
+  flex: 1 1 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right: text */
+.project-box-featured .pv-body {
+  flex: 2 1 600px;
+  text-align: left;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .project-box-featured > div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-box-featured .pv-body {
+    text-align: center;
+  }
+}
+
+.thumbnail-link {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;    /* center horizontally */
+  gap: 10px;              /* space between the two images */
+}
+
+.thumbnail-link img {
+  display: block;
+  width: 200px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 
